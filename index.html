@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Muralismo</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js">         </script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+		
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+	    
+      <section class="page1 page intro" id="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 textbg">
+                        <h1 class="brand-heading">Muralismo</h1>
+                        <p class="intro-text">Listen to the voices behind Mission Murals.</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+      </section>
+	    
+	    <section class="page2 page" id="tours">
+	                  <div class="row lesspad">
+                <h2>Muralismo tours</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="tour">
+                        <div class="tour_image img6">&nbsp;</div>
+                        <div class="tour_title">
+                        <h3>Mujeres Muralistas</h3>
+                        <p>5 murals | 1 hour</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tour">
+                        <div class="tour_image img1">&nbsp;</div>
+                        <div class="tour_title">
+                        <h3>Social Causes</h3>
+                        <p>6 murals | 1 hour 30 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tour">
+                        <div class="tour_image img3">&nbsp;</div>
+                        <div class="tour_title">
+                        <h3>Mexican Heritage</h3>
+                        <p>3 murals | 40 min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="tour">
+                        <div class="tour_image img4">&nbsp;</div>
+                        <div class="tour_title">
+                        <h3>Contemporary Murals</h3>
+                        <p>2 murals | 20 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tour">
+                        <div class="tour_image img5">&nbsp;</div>
+                        <div class="tour_title">
+                        <h3>La Virgen</h3>
+                        <p>7 murals | 1 hour 30 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tour">
+                        <div class="tour_image img2">&nbsp;</div>
+                        <div class="tour_title">
+                        <h3>Surrealism</h3>
+                        <p>4 murals | 1 hour</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </section>
+	    
+	    <section class="page3 page" id="features">
+	      <div class="row lesspad">
+                <h2>Muralismo App</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-4">
+                    <h3 style="margin-top: 0;">Tailored Tours</h3>
+                    <p>Muralismo has tailored tours so you get to know more about the murals step by step.</p>
+                    <img class="app" src="media/app-02.png">
+                </div>
+                <div class="col-md-4">
+                    <img class="app" src="media/app-03.png">
+                    <h3>Spotlight</h3>
+                    <p>Discover the details behind the murals.</p>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6 grey">
+                  <h4>Download the app now <i class="fa fa-apple"></i></h4>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+      </section>
+    </div>
+  </div>
+<script>
+$(document).ready(function(){
+
+var header = $('#intro');
+
+var backgrounds = new Array(
+    'url(media/slide1.jpg)'
+  , 'url(media/slide2.jpg)'
+  , 'url(media/slide3.jpg)'
+  , 'url(media/slide4.jpg)'
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+    //header.animate({'background-image':backgrounds[current]},500);
+}
+setInterval(nextBackground, 3000);
+
+//header.animate({'background-image':backgrounds[0]})
+header.css('background-image', backgrounds[0]);
+    
+});
+</script>
+</body>
+</html>
